@@ -25,6 +25,9 @@
         },
         "deploySQL": {
             "value": false
+        },
+        "vmSize": {
+            "value": "Standard_E8s_v5"
         }
     }
 }
