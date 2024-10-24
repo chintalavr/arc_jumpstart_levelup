@@ -112,6 +112,10 @@
                 "description": "Override default RDP 3389 using this parameter. Default is 3389. No changes will be made to the client VM."
             },
             "defaultValue": ""
+        },
+        "vmSize": {
+        "type": "string",
+        "defaultValue": "Standard_E16s_v5"
         }
     },
     "variables": {
@@ -176,7 +180,7 @@
             ],
             "properties": {
                 "hardwareProfile": {
-                    "vmSize": "Standard_E16s_v5"
+                    "vmSize": "[parameters('vmSize')]"
                 },
                 "storageProfile": {
                     "osDisk": {

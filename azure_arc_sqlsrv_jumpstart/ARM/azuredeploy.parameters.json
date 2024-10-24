@@ -22,6 +22,9 @@
         },
         "deployBastion": {
             "value": false
+        },
+        "vmSize": {
+            "value": "Standard_E16s_v5"
         }
     }
 }
